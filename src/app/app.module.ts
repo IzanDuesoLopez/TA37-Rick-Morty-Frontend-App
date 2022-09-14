@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { CharactersComponent } from './characters/characters.component';
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SeeMoreComponent } from './see-more/see-more.component';
 
 
 
@@ -17,7 +18,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     HomeComponent,
     CharactersComponent,
     AboutComponent,
-    NavbarComponent
+    NavbarComponent,
+    SeeMoreComponent
   ],
   imports: [
     BrowserModule,

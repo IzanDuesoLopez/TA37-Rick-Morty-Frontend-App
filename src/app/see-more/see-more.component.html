@@ -1,0 +1,27 @@
+<div class="container text-center">
+  <div class="row">
+
+    <div class="col">
+
+    </div>
+    <div class="col">
+      <div class="carta">
+        <img src="{{articulos.results[id].image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{articulos.results[id].name}}</h5>
+          <p>{{articulos.results[id].status}}</p>
+          <p>{{articulos.results[id].species}}</p>
+          <p>{{articulos.results[id].type}}</p>
+          <p>{{articulos.results[id].gender}}</p>
+          <p>{{articulos.results[id].origin.name}}</p>
+          <p>{{articulos.results[id].location.name}}</p>
+          <p>{{articulos.results[id].created}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+
+    </div>
+  </div>
+</div>
+<ng-template #espera>Esperando...</ng-template>
