@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Character } from '../models/character.model';
 
-const baseUrl = 'https://server.dvrnhz74iarcb.amplifyapp.com/database.json';
+const baseUrl = 'https://json-chars.herokuapp.com/characters';
 
 @Injectable({
   providedIn: 'root'
