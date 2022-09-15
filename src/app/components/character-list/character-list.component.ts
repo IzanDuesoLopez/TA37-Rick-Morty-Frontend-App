@@ -45,7 +45,8 @@ export class CharacterListComponent implements OnInit {
   }
 
   removeAllCharacters(): void{
-    this.characterService.deleteAll()
+    if(confirm('Vas a borrar a todos los personajes. ¿Estas seguro/a?')){
+      this.characterService.deleteAll()
       .subscribe(
         response => {
           console.log(response);
@@ -55,6 +56,23 @@ export class CharacterListComponent implements OnInit {
           console.log(error);
         }
       )
+    }
+  }
+
+  removeCharacter(id:any){
+    if (confirm('Are you sure you want to delete?')) {
+      this.characterService.delete(id)
+      .subscribe(
+        response => (
+          console.log(response),
+          this.ngOnInit()
+        ),
+        error => {
+          console.log(error)
+        }
+      );
+    }
+
   }
 
   searchName(): void{

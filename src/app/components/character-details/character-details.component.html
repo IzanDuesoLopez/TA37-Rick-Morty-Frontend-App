@@ -1,1 +1,50 @@
-<p>character-details works!</p>
+<div class="container text-center">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col">
+
+      <div *ngIf="currentCharacter.id" class="edit-form">
+        <h3>Character</h3>
+
+        <form>
+          <div class="form-group">
+            <label for="name" class="mt-3">Name</label>
+            <input type="text" class="form-control mb-3" id="name" required [(ngModel)]="currentCharacter.name" name="name"/>
+          </div>
+          <div class="form-group">
+            <label for="status">Status</label>
+            <input type="text" class="form-control mb-3" id="status" [(ngModel)]="currentCharacter.status" name="status"/>
+          </div>
+          <div class="form-group">
+            <label for="species">Species</label>
+            <input type="text" class="form-control mb-3" id="species" [(ngModel)]="currentCharacter.species" name="species"/>
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <input type="text" class="form-control mb-3" id="gender" [(ngModel)]="currentCharacter.gender" name="gender"/>
+          </div>
+          <div class="form-group">
+            <label for="origin">Origin</label>
+            <input type="text" class="form-control mb-3" id="origin" [(ngModel)]="currentCharacter.origin" name="origin"/>
+          </div>
+          <div class="form-group">
+            <label for="image">Image</label>
+            <input type="text" class="form-control mb-3" id="image" [(ngModel)]="currentCharacter.image" name="image"/>
+          </div>
+        </form>
+
+        <button class="badge badge-primary mr-2" (click)="deleteCharacter()">Delete</button>
+        <button class="badge badge-primary mr-2" type="submit" (click)="updateCharacter()">Update</button>
+        <p>{{message}}</p>
+      </div>
+
+      <div *ngIf="!currentCharacter.id">
+        <br>
+        <p>No se puede acceder a este personaje</p>
+      </div>
+
+    </div>
+
+    <div class="col"></div>
+  </div>
+</div>
