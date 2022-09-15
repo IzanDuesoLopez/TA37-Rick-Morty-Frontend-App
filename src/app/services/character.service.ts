@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Character } from '../models/character.model';
 
-const baseUrl = 'http://localhost:3000/characters';
+const baseUrl = 'https://server.dvrnhz74iarcb.amplifyapp.com/database.json';
 
 @Injectable({
   providedIn: 'root'
