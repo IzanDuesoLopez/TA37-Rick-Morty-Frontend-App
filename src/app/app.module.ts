@@ -9,6 +9,11 @@ import { CharactersComponent } from './characters/characters.component';
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SeeMoreComponent } from './see-more/see-more.component';
+import { AddCharacterComponent } from './components/add-character/add-character.component';
+import { CharacterDetailsComponent } from './components/character-details/character-details.component';
+import { CharacterListComponent } from './components/character-list/character-list.component';
+import { FormsModule } from '@angular/forms';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 
@@ -19,12 +24,20 @@ import { SeeMoreComponent } from './see-more/see-more.component';
     CharactersComponent,
     AboutComponent,
     NavbarComponent,
-    SeeMoreComponent
+    SeeMoreComponent,
+    AddCharacterComponent,
+    CharacterDetailsComponent,
+    CharacterListComponent,
+    AddCharacterComponent,
+    CharacterDetailsComponent,
+    CharacterListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
