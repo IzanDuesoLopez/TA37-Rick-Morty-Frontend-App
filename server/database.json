@@ -42,8 +42,17 @@
       "status": "Alive",
       "species": "Human",
       "gender": "Male",
-      "origin":"Earth (Replacement Dimension)",
+      "origin": "Earth (Replacement Dimension)",
       "image": "https://rickandmortyapi.com/api/character/avatar/5.jpeg"
+    },
+    {
+      "name": "Izan",
+      "status": "Muybein",
+      "species": "Humano",
+      "gender": "Hombre",
+      "origin": "España",
+      "image": "https://actiucdn.net/uploads/images/headers/-de-que-sirve-cambiar-los-muebles-de-la-oficina-_1280_1024.jpg",
+      "id": 6
     }
   ]
 }
