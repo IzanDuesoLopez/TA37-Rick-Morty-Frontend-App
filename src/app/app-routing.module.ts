@@ -5,6 +5,8 @@ import { CharactersComponent } from './characters/characters.component';
 import { AddCharacterComponent } from './components/add-character/add-character.component';
 import { CharacterDetailsComponent } from './components/character-details/character-details.component';
 import { CharacterListComponent } from './components/character-list/character-list.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './home/home.component';
 import { SeeMoreComponent } from './see-more/see-more.component';
 
@@ -25,7 +27,9 @@ const routes: Routes = [
   {path: 'characters', component: CharactersComponent},
   {path: 'characters_list', component: CharacterListComponent},
   {path: 'characters_list/:id', component: CharacterDetailsComponent},
-  {path: 'add', component: AddCharacterComponent}
+  {path: 'add', component: AddCharacterComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent}
 ];
 
 @NgModule({

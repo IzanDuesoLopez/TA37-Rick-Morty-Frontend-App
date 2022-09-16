@@ -14,6 +14,8 @@ import { CharacterDetailsComponent } from './components/character-details/charac
 import { CharacterListComponent } from './components/character-list/character-list.component';
 import { FormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 
@@ -30,7 +32,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
     CharacterListComponent,
     AddCharacterComponent,
     CharacterDetailsComponent,
-    CharacterListComponent
+    CharacterListComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
